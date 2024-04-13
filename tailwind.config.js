@@ -6,6 +6,7 @@ module.exports = {
         poppins: ["Poppins", "sans-serif"],
         Hindi: ["Palanquin Dark", "cursive"],
         laila: ["Laila", "serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

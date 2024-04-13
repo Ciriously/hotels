@@ -51,7 +51,7 @@ const data = {
 
 const TrendingProperties = () => {
     return (
-        <div>
+        <div className='mt-24'>
             <ScrollCards data={data} />
         </div>
     );

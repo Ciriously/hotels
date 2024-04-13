@@ -24,7 +24,7 @@ const ScrollCards = ({ data }) => {
                                             className="w-full h-1/3 object-cover border-2  rounded-2xl"
                                         />
                                     </div>
-                                    <div className="p-4">
+                                    <div className="p-4  font-inter">
                                         <p className="font-bold text-xs text-gray-500">{item.pretitle}</p>
                                         <h2 className="font-bold text-xl text-gray-800">{item.title}</h2>
                                         <p className="text-sm text-gray-500">{item.subtitle}</p>
