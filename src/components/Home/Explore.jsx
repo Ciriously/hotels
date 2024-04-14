@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import demo from "../images/explore/demo.svg";
-import mobileImage from "../images/explore/Frame.svg";
-import bgImage from "../images/explore/Group.png";
-import Apple from "../images/shared/Apple.svg";
-import Google from "../images/shared/Google.png";
+import demo from "../../images/explore/demo.svg";
+import mobileImage from "../../images/explore/Frame.svg";
+import bgImage from "../../images/explore/Group.png";
+import Apple from "../../images/shared/Apple.svg";
+import Google from "../../images/shared/Google.png";
 
 const Explore = () => {
     const [mobileNumber, setMobileNumber] = useState('');

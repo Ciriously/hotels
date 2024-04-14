@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollCards from './ui/ScrollCards';
+import ScrollCards from '../ui/ScrollCards';
 
 const data = {
     title: "Trending Properties in Shree Ayodhya Ji.",

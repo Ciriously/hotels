@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SearchContainer = () => {
     const [searchHotels, setSearchHotels] = useState('');
     const [checkInDate, setCheckInDate] = useState('');
     const [checkOutDate, setCheckOutDate] = useState('');
     const [guests, setGuests] = useState('');
+    const navigate = useNavigate();
 
     const handleSearchHotelsChange = (e) => {
         setSearchHotels(e.target.value);
@@ -23,7 +25,15 @@ const SearchContainer = () => {
     };
 
     const handleSearch = () => {
-        // Handle search logic here
+        // Validation logic
+        if (searchHotels.trim() === '' || checkInDate === '' || checkOutDate === '' || guests === '') {
+            // If any field is empty, display an alert or error message
+            alert('Please fill in all fields');
+            return;
+        }
+
+        // If all fields are filled, redirect to SearchResults page
+        navigate('/search', { state: { checkInDate, checkOutDate, guests } });
     };
 
     return (
@@ -31,7 +41,7 @@ const SearchContainer = () => {
             <div className="bg-white w-full sm:w-5/6 md:w-4/6 lg:w-3/4 xl:w-5/6 font-poppins rounded-3xl shadow-xl p-4">
                 <div className="flex flex-wrap items-center justify-center sm:justify-between">
                     <div className="w-full sm:w-auto flex-1 sm:px-4  sm:border-r border-black mb-4 sm:mb-0">
-                        <label className="block mb-2 font-medium text-black" htmlFor="searchHotels">Search where are you gonna stay?</label>
+                        <label className="block mb-2 font-medium text-sm sm:text-sm text-black" htmlFor="searchHotels">Search where are you gonna stay?</label>
                         <input
                             type="text"
                             id="searchHotels"
@@ -42,7 +52,7 @@ const SearchContainer = () => {
                         />
                     </div>
                     <div className="w-full sm:w-auto flex-1 sm:px-4  sm:border-r border-black mb-4 sm:mb-0">
-                        <label className="block mb-2 font-medium text-black" htmlFor="checkInDate">Check-In Date</label>
+                        <label className="block mb-2 font-medium text-sm sm:text-sm text-black" htmlFor="checkInDate">Check-In Date</label>
                         <input
                             type="date"
                             id="checkInDate"
@@ -52,7 +62,7 @@ const SearchContainer = () => {
                         />
                     </div>
                     <div className="w-full sm:w-auto flex-1 sm:px-4  sm:border-r border-black mb-4 sm:mb-0">
-                        <label className="block mb-2 font-medium text-black" htmlFor="checkOutDate">Check-Out Date</label>
+                        <label className="block mb-2 font-medium text-sm sm:text-sm text-black" htmlFor="checkOutDate">Check-Out Date</label>
                         <input
                             type="date"
                             id="checkOutDate"
@@ -62,7 +72,7 @@ const SearchContainer = () => {
                         />
                     </div>
                     <div className="w-full sm:w-auto flex-1 sm:px-4  sm:border-r border-black mb-4 sm:mb-0">
-                        <label className="block mb-2 font-medium text-black" htmlFor="guests">Guests</label>
+                        <label className="block mb-2 font-medium text-md md:text-sm text-black" htmlFor="guests">Guests</label>
                         <input
                             type="number"
                             id="guests"
@@ -72,7 +82,7 @@ const SearchContainer = () => {
                         />
                     </div>
                     <div className="flex items-end px-2 mt-8 sm:mb-0">
-                        <button className="bg-[#B01432] text-xl text-white px-6 py-4 rounded-md" onClick={handleSearch}>Search</button>
+                        <button className="bg-[#B01432] text-sm sm:text-base text-white px-6 py-4 rounded-md" onClick={handleSearch}>Search</button>
                     </div>
                 </div>
             </div>
