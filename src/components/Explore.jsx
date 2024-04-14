@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import demo from "../images/explore/demo.svg";
 import mobileImage from "../images/explore/Frame.svg";
 import bgImage from "../images/explore/Group.png";
-import Apple from "../images/shared/App Store Black (1).svg";
-import Google from "../images/shared/Body.svg";
+import Apple from "../images/shared/Apple.svg";
+import Google from "../images/shared/Google.png";
 
 const Explore = () => {
     const [mobileNumber, setMobileNumber] = useState('');
@@ -43,10 +43,10 @@ const Explore = () => {
                         <img src={mobileImage} alt="Mobile" className="w-2/3 md:w-auto pt-5" />
                         <div className="ml-4">
                             <a target="_blank" href="#">
-                                <img src={Apple} alt="Google Play" className="w-28 md:w-40 mt-4 h-20 md:h-24" />
+                                <img src={Apple} alt="Google Play" className="w-28 h-20 md:w-40 md:h-24" />
                             </a>
                             <a target="_blank" href="#">
-                                <img src={Apple} alt="App Store" className="w-28 md:w-40 h-20 md:h-24" />
+                                <img src={Apple} alt="App Store" className="w-28 h-20 md:w-40 md:h-24" />
                             </a>
                         </div>
                     </div>

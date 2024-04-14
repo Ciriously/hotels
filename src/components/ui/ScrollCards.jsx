@@ -29,7 +29,7 @@ const ScrollCards = ({ data }) => {
                                         <h2 className="font-bold text-xl text-gray-800">{item.title}</h2>
                                         <p className="text-sm text-gray-500">{item.subtitle}</p>
                                         <div className="flex justify-center items-center mt-4">
-                                            <span className="font-bold text-lg text-gray-800">{item.price}/Night</span>
+                                            <span className="font-bold text-xl text-gray-800">{item.price} <span className='font-[300] text-sm text-black'>/night</span></span>
                                         </div>
                                     </div>
                                 </div>

@@ -7,6 +7,7 @@ import SponsoredHS from "./components/SponsoredHomestays";
 import Explore from "./components/Explore";
 import Features from "./components/Features";
 import SearchContainer from "./components/Searchengine/SearchContainer";
+import Footer from "./components/shared/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <SponsoredHS />
         <Features />
         <Explore />
+        <Footer />
       </div>
     </Router>
   );

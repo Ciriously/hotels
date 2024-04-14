@@ -6,52 +6,53 @@ const data = {
     items: [
         {
             image: "https://source.unsplash.com/random/?hotel",
-            pretitle: "Pretitle 1",
-            title: "Title 1",
-            subtitle: "Subtitle 1",
+            pretitle: "Homestays",
+            title: "The Mansarovar Paying Guest House",
+            subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$2000"
         },
         {
             image: "https://source.unsplash.com/random/?hotel",
-            pretitle: "Pretitle 2",
-            title: "Title 2",
-            subtitle: "Subtitle 2",
+            pretitle: "Homestays",
+            title: "The Mansarovar Paying Guest House",
+            subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$2500"
         },
         {
             image: "https://source.unsplash.com/random/?hotel",
-            pretitle: "Pretitle 3",
-            title: "Title 3",
-            subtitle: "Subtitle 3",
+            pretitle: "Homestays",
+            title: "The Mansarovar Paying Guest House",
+            subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$3000"
         },
         {
             image: "https://source.unsplash.com/random/?hotel",
-            pretitle: "Pretitle 4",
-            title: "Title 4",
-            subtitle: "Subtitle 4",
+            pretitle: "Homestays",
+            title: "The Mansarovar Paying Guest House",
+            subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$3500"
         },
         {
             image: "https://source.unsplash.com/random/?hotel",
-            pretitle: "Pretitle 5",
-            title: "Title 5",
-            subtitle: "Subtitle 5",
+            pretitle: "Homestays",
+            title: "The Mansarovar Paying Guest House",
+            subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$4000"
         },
         {
             image: "https://source.unsplash.com/random/?hotel",
-            pretitle: "Pretitle 6",
-            title: "Title 6",
-            subtitle: "Subtitle 6",
+            pretitle: "Homestays",
+            title: "The Mansarovar Paying Guest House",
+            subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$4500"
+
         }
     ]
 };
 
 const SponsoredHS = () => {
     return (
-        <div>
+        <div className='mb-4'>
             <ScrollCards data={data} />
         </div>
     );
