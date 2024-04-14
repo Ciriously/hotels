@@ -39,7 +39,7 @@ const Footer = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h3 className="font-bold uppercase font-inter text-black">Important Links</h3>
+                                <h3 className="font-bold uppercase text-xl font-inter text-black">Important Links</h3>
                                 <ul className="mt-4 space-y-2 list-disc pl-6 text-gray-700">
                                     <li><a href="/ayodhya-development-authority">Ayodhya Development Authority</a></li>
                                     <li><a href="/disclaimer">Disclaimer</a></li>
@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
                 <hr className="my-4 border-black" />
                 <div className="flex flex-col-reverse md:flex-row justify-between text-sm text-gray-700">
-                    <div className="text-center sm:text-left text-black text-xl mb-4 md:mb-0">@ 2023 All rights reserved.</div>
+                    <div className="text-center text-black text-xl mb-4 md:mb-0">@ 2023 All rights reserved.</div>
                     <div className="flex gap-6 justify-center md:justify-end">
                         <a href="#" className="text-black hover:text-gray-900"><FaFacebook size={30} /></a>
                         <a href="#" className="text-black hover:text-gray-900"><FaTwitter size={30} /></a>
