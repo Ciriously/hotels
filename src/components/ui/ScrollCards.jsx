@@ -21,7 +21,7 @@ const ScrollCards = ({ data }) => {
                                         <img
                                             src={item.image}
                                             alt={item.title}
-                                            className="w-full h-1/3 object-cover border-2  rounded-2xl"
+                                            className="w-full h-[250px] object-cover border-2  rounded-2xl"
                                         />
                                     </div>
                                     <div className="p-4  font-inter">

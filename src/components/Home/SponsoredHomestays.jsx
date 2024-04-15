@@ -4,6 +4,7 @@ import ScrollCards from '../ui/ScrollCards';
 const data = {
     title: "Sponsered Homestays ",
     items: [
+
         {
             image: "https://source.unsplash.com/random/?hotel",
             pretitle: "Homestays",
@@ -11,6 +12,7 @@ const data = {
             subtitle: "Beniganj, Panchkosi Parkrama Marg, Near Gupta Hotel, Ayodhya",
             price: "$2000"
         },
+
         {
             image: "https://source.unsplash.com/random/?hotel",
             pretitle: "Homestays",
