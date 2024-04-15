@@ -7,6 +7,7 @@ module.exports = {
         Hindi: ["Palanquin Dark", "cursive"],
         laila: ["Laila", "serif"],
         inter: ["Inter", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

@@ -6,14 +6,14 @@ const data = {
     // title: "Search results are",
     items: [
         {
-            image: "https://source.unsplash.com/random/?hotel",
+            image: "https://images.holyayodhya.com/images/hotel/965a12357ef6de702ee1b9cc8384153a.jpeg",
             pretitle: "Pretitle 1",
             title: "Title 1",
             subtitle: "Subtitle 1",
             price: "$2000"
         },
         {
-            image: "https://source.unsplash.com/random/?hotel",
+            image: "https://images.holyayodhya.com/images/hotel/965a12357ef6de702ee1b9cc8384153a.jpeg",
             pretitle: "Pretitle 2",
             title: "Title 2",
             subtitle: "Subtitle 2",
