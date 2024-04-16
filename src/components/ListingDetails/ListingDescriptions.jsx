@@ -1,5 +1,7 @@
 import ListingDescriptionPopup from "./ListingDescriptionPopup";
 import { amenities } from "./amenitiesApi";
+import Map from "./Map";
+
 import { AiOutlineRight } from "react-icons/ai";
 
 const ListingDescriptions = () => {
@@ -25,8 +27,10 @@ const ListingDescriptions = () => {
             firstName: "John",
         },
         profileImg: "https://images.holyayodhya.com/images/hotel/4024543df88862b544a11693d5cb2adc.jpeg",
-
     };
+
+    const latLong = [listingData?.location?.city?.latitude, listingData?.location?.city?.longitude];
+    const latLongNaN = isNaN(latLong[0]) || isNaN(latLong[1]);
 
     return (
         <>
@@ -89,6 +93,20 @@ const ListingDescriptions = () => {
                             );
                         }
                     })}
+                </div>
+            </div>
+            <hr className=" h-[1.2px] w-full bg-[#dddddd] my-8" />
+
+            {/* location of the listing */}
+            <div className=" flex flex-col gap-6">
+                <h2 className="text-[22px] font-poppins text-[#222222] font-medium">
+                    Where you&apos;ll be
+                </h2>
+                {/* map */}
+                <div className=" w-full min-h-[400px]">
+                    {!latLongNaN && (
+                        <Map latAndLong={latLong} zoom={6} key="listingMap" />
+                    )}
                 </div>
             </div>
             <hr className="h-[1.2px] w-full bg-[#dddddd] my-8" />
