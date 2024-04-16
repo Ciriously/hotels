@@ -11,7 +11,7 @@ const Listing = () => {
         <div>
             <Navbar />
 
-            <main className="max-w-screen-xl xl:px-12 mx-auto py-7 px-5 sm:px-16 md:px-8">
+            <main className="max-w-screen-2xl xl:px-8 mx-auto py-7 px-5 sm:px-16 md:px-8">
                 <section className=" flex flex-col-reverse md:flex-col gap-7">
                     {/* listing title & wishlist */}
                     <ListingTitle />

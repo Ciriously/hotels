@@ -5,7 +5,7 @@ import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const customIcon = new Icon({
-  iconUrl: "../../location.png", // Provide the path to your custom icon
+  iconUrl: "../../location.png",
   iconSize: [32, 32],
   iconAnchor: [16, 32],
   popupAnchor: [0, -32],
