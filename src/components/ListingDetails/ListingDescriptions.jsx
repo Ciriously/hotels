@@ -119,7 +119,7 @@ const ListingDescriptions = () => {
                     Where you&apos;ll be
                 </h2>
                 {/* map */}
-                <div className=" w-full min-h-[400px]</div>">
+                <div className="w-full min-h-[400px]">
                     {!latLongNaN && (
                         <Map latAndLong={latLong} zoom={6} key="listingMap" />
                     )}
